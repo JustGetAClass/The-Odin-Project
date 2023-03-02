@@ -5,9 +5,9 @@ const fibonacci = function (count) {
 	let a = 0;
 	let b = 1;
 	for (let i = 1; i < count; i++) {
-		let temp = b;
-		b = a + b;
-		a = temp
+		let temp = b;  //temp = 1
+		b = a + b; // b = 0 + 1
+		a = temp  // a = 1
 	}
 	return b;
 };
